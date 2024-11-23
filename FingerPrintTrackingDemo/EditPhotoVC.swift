@@ -32,7 +32,7 @@ class EditPhotoVC: UIViewController {
 
     func setupUI() {
 
-        self.title = "Edit Photoo"
+        self.title = "Edit Photooo"
         self.navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(btnAddAction(_:))),
             UIBarButtonItem(title: "Apply", style: .plain, target: self, action: #selector(btnApplyAction(_:)))
