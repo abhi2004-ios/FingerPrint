@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NpZ-ce-L4I">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FingerPrintTrackingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-27"/>
+        </scene>
+        <!--Edit PhotoVC-->
+        <scene sceneID="5CO-cr-8yF">
+            <objects>
+                <viewController id="GLJ-VR-k20" customClass="EditPhotoVC" customModule="FingerPrintTrackingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Ht-4S-VsY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tor-Sq-bno">
+                                <rect key="frame" x="0.0" y="103" width="393" height="615"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OBI-l1-6Gd">
+                                        <rect key="frame" x="171.66666666666666" y="282.66666666666669" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="gMh-7n-Z7V"/>
+                                            <constraint firstAttribute="height" constant="50" id="yWT-Ow-Fxc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OBI-l1-6Gd" secondAttribute="trailing" id="0d5-43-xXQ"/>
+                                    <constraint firstItem="OBI-l1-6Gd" firstAttribute="centerX" secondItem="tor-Sq-bno" secondAttribute="centerX" id="6Ic-Vd-pw1"/>
+                                    <constraint firstItem="OBI-l1-6Gd" firstAttribute="centerY" secondItem="tor-Sq-bno" secondAttribute="centerY" id="BfB-gW-ff6"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="OBI-l1-6Gd" secondAttribute="bottom" id="Goc-qN-8Z4"/>
+                                    <constraint firstItem="OBI-l1-6Gd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tor-Sq-bno" secondAttribute="leading" id="pkD-jH-3kj"/>
+                                    <constraint firstItem="OBI-l1-6Gd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tor-Sq-bno" secondAttribute="top" id="uSI-dW-jqB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L6t-Ob-aPa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="L6t-Ob-aPa" firstAttribute="bottom" secondItem="tor-Sq-bno" secondAttribute="bottom" constant="100" id="KF3-3X-Qpu"/>
+                            <constraint firstItem="tor-Sq-bno" firstAttribute="leading" secondItem="L6t-Ob-aPa" secondAttribute="leading" id="Rv9-s8-UU7"/>
+                            <constraint firstItem="L6t-Ob-aPa" firstAttribute="trailing" secondItem="tor-Sq-bno" secondAttribute="trailing" id="haP-wP-S9u"/>
+                            <constraint firstItem="tor-Sq-bno" firstAttribute="top" secondItem="L6t-Ob-aPa" secondAttribute="top" id="vA1-mt-gqD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="TQF-0e-7tI"/>
+                    <connections>
+                        <outlet property="imgEditHeight" destination="yWT-Ow-Fxc" id="JTz-h0-Dwl"/>
+                        <outlet property="imgEditImage" destination="OBI-l1-6Gd" id="nMK-Az-mFa"/>
+                        <outlet property="imgEditWidth" destination="gMh-7n-Z7V" id="B47-Dc-FpE"/>
+                        <outlet property="vwBGimgEdit" destination="tor-Sq-bno" id="6dS-Df-vME"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hzk-dx-Xp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="642"/>
+        </scene>
+        <!--Emotion DetectionVC-->
+        <scene sceneID="LXJ-io-xaa">
+            <objects>
+                <viewController id="iPd-rj-CAb" customClass="EmotionDetectionVC" customModule="FingerPrintTrackingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhc-ET-py8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rob-et-tWn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKW-eq-ayI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Cwf-bQ-Znl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NpZ-ce-L4I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qSb-cH-Pto">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GLJ-VR-k20" kind="relationship" relationship="rootViewController" id="tas-11-u7C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjT-aa-P4w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="641.54929577464793"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
