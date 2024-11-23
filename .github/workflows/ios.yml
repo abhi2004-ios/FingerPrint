@@ -64,7 +64,7 @@ jobs:
           -scheme "FingerPrintTrackingDemo" \
           -archivePath $RUNNER_TEMP/fingerprinttrackingdemo.xcarchive \
           -sdk iphoneos \
-          -configuration Release \
+          -configuration Debug \
           -destination generic/platform=iOS \
           clean archive
 
