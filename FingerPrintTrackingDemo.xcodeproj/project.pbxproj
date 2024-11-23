@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0963640CD8FD070E25DC26DF /* Pods_FingerPrintTrackingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028624993967BFDAC21D2948 /* Pods_FingerPrintTrackingDemo.framework */; };
 		BD39F6CB2CEB3FE700744DBE /* EmotionDetectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD39F6CA2CEB3FE700744DBE /* EmotionDetectionVC.swift */; };
 		BD55B3E62CEC9F37003F98D5 /* EditPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD55B3E52CEC9F37003F98D5 /* EditPhotoVC.swift */; };
 		BD55B3E82CECA3C8003F98D5 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BD55B3E72CECA3C8003F98D5 /* MobileNetV2.mlmodel */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028624993967BFDAC21D2948 /* Pods_FingerPrintTrackingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FingerPrintTrackingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4125AFB11661178532BAF80E /* Pods-FingerPrintTrackingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerPrintTrackingDemo.debug.xcconfig"; path = "Target Support Files/Pods-FingerPrintTrackingDemo/Pods-FingerPrintTrackingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BD39F6CA2CEB3FE700744DBE /* EmotionDetectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDetectionVC.swift; sourceTree = "<group>"; };
 		BD55B3E52CEC9F37003F98D5 /* EditPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoVC.swift; sourceTree = "<group>"; };
 		BD55B3E72CECA3C8003F98D5 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		BD696A5F2CE320C300617EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDB930C62CF06ABE002001D0 /* CropAreaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CropAreaView.xib; sourceTree = "<group>"; };
 		BDB930C82CF06B6A002001D0 /* CropAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropAreaView.swift; sourceTree = "<group>"; };
+		F3F471CEF38B2C45AD3B9694 /* Pods-FingerPrintTrackingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FingerPrintTrackingDemo.release.xcconfig"; path = "Target Support Files/Pods-FingerPrintTrackingDemo/Pods-FingerPrintTrackingDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0963640CD8FD070E25DC26DF /* Pods_FingerPrintTrackingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39C488CF17878B13890E3AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				028624993967BFDAC21D2948 /* Pods_FingerPrintTrackingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76F9A251B0C6EBFBADF4A79F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4125AFB11661178532BAF80E /* Pods-FingerPrintTrackingDemo.debug.xcconfig */,
+				F3F471CEF38B2C45AD3B9694 /* Pods-FingerPrintTrackingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD696A452CE320C200617EE6 = {
 			isa = PBXGroup;
 			children = (
 				BD696A502CE320C200617EE6 /* FingerPrintTrackingDemo */,
 				BD696A4F2CE320C200617EE6 /* Products */,
+				76F9A251B0C6EBFBADF4A79F /* Pods */,
+				39C488CF17878B13890E3AFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +114,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD696A622CE320C300617EE6 /* Build configuration list for PBXNativeTarget "FingerPrintTrackingDemo" */;
 			buildPhases = (
+				D8ECC0986BA862C4FA391AD5 /* [CP] Check Pods Manifest.lock */,
 				BD696A4A2CE320C200617EE6 /* Sources */,
 				BD696A4B2CE320C200617EE6 /* Frameworks */,
 				BD696A4C2CE320C200617EE6 /* Resources */,
@@ -148,6 +174,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8ECC0986BA862C4FA391AD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FingerPrintTrackingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD696A4A2CE320C200617EE6 /* Sources */ = {
@@ -307,6 +358,7 @@
 		};
 		BD696A632CE320C300617EE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4125AFB11661178532BAF80E /* Pods-FingerPrintTrackingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +393,7 @@
 		};
 		BD696A642CE320C300617EE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F471CEF38B2C45AD3B9694 /* Pods-FingerPrintTrackingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

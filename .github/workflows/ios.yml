@@ -60,7 +60,7 @@ jobs:
       # Build archive
       - name: Build archive
         run: |
-          xcodebuild -workspace "FingerPrintTrackingDemo.xcodeproj" \
+          xcodebuild -workspace "FingerPrintTrackingDemo.xcworkspace" \
           -scheme "FingerPrintTrackingDemo" \
           -archivePath $RUNNER_TEMP/fingerprinttrackingdemo.xcarchive \
           -sdk iphoneos \
